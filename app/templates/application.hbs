@@ -5,9 +5,9 @@
 <button {{action "toggleModal"}}>Toggle Modal</button>
 
 {{#if isShowingModal}}
-  {{#modal-dialog close="toggleModal"
+  {{#custom-modal close="toggleModal"
                   targetAttachment="center"
                   translucentOverlay=true}}
     Oh hai there!
-  {{/modal-dialog}}
+  {{/custom-modal}}
 {{/if}}
